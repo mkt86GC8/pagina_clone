@@ -1,0 +1,105 @@
+/* Reset básico */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho (nome do usuário no topo) */
+#cabecalho {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Container principal do perfil */
+#perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Foto de perfil */
+#perfil_ft img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid red; /* Contorno vermelho */
+    object-fit: cover;
+}
+
+/* Seção de números (posts, seguidores, seguindo) */
+#perfil_info {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#numeros {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.info h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Nome e bio do usuário */
+#bio {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#bio h4 {
+    margin: 5px 0;
+}
+
+#bio p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Botão de editar perfil */
+#editar_perfil {
+    background-color: transparent;
+    border: 1px solid #dbdbdb;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#editar_perfil:hover {
+    background-color: #efefef;
+}
+
+/* Seção de posts */
+#posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.post img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
